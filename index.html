@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Internet Survey</h1>
+    <p id="description">Get to know internet better!</p>
+    <form id="survey-form">
+      <div>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="eg. John Doe"
+            value="name"
+          /><br />
+          <label for="email" id="email-label">Email:</label>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            value="email"
+          /><br />
+          <label for="number" id="number-label">Age:</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            require
+            max="1"
+            min="100"
+            placeholder="eg. 18"
+          /><br />
+          <label for="gender-label">Gender</label>
+          <select id="dropdown" name="gender">
+            <option id="Male">M</option>
+            <option id="Female">F</option>
+            <option selected id="Not-say">Rather Not Say</option></select
+          ><br />
+          <label for="role">What best suits your role?</label>
+          <select id="role" name="role">
+            <option id="job">Full Time Job</option>
+            <option id="part-job">Part Time Job</option>
+            <option id="student">Student</option>
+            <option id="unemployed">Unemployed</option>
+            <option id="self">Self Employed</option>
+          </select>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Survey Info</legend>
+          <p>Which browser you use the most?</p>
+          <input
+            type="radio"
+            id="browser"
+            name="browser"
+            value="chrome"
+            checked
+          />
+          <label for="browser">Google Chrome</label>
+          <input type="radio" id="browser" name="browser" value="safari" />
+          <label for="browser">Safari</label>
+          <input type="radio" id="browser" name="browser" value="Firefox" />
+          <label for="browser">Mozilla Firefox</label>
+          <input type="radio" id="browser" name="browser" value="others" />
+          <label for="browser">Others</label>
+          <p>
+            What do you use for research purposes (eg. Vacation planning,
+            homeworks etc.)?
+          </p>
+          <input type="radio" id="research" name="research" value="ai" />
+          <label for="research">AI</label>
+          <input
+            checked
+            type="radio"
+            id="research"
+            name="research"
+            value="search"
+          />
+          <label ="research">Search Engines</label>
+          <p>
+            Which Social Media you have or use frequently?(Check all that apply)
+          </p>
+          <input
+            checked
+            type="checkbox"
+            id="media"
+            name="media"
+            value="insta"
+          />
+          <label for="media">Instagram</label>
+          <input type="checkbox" id="media" name="media" value="wapp" />
+          <label for="media">Whatsapp</label>
+          <input type="checkbox" id="media" name="media" value="reddit" />
+          <label for="media">Reddit</label>
+          <input type="checkbox" id="media" name="media" value="snap" />
+          <label for="media">Snapchat</label>
+          <input type="checkbox" id="media" name="media" value="discord" />
+          <label for="media">Discord</label>
+          <input type="checkbox" id="media" name="media" value="x" />
+          <label for="media">X</label>
+          <input type="checkbox" id="media" name="media" value="facebook" />
+          <label for="media">Facebook</label>
+          <input type="checkbox" id="media" name="media" value="quora" />
+          <label for="media">Quora</label>
+          <input type="checkbox" id="media" name="media" value="youtube" />
+          <label for="media">Youtube</label>
+          <input type="checkbox" id="media" name="media" value="linkedin" />
+          <label for="media">LinkedIn</label>
+          <input type="checkbox" id="media" name="media" value="threads" />
+          <label for="media">Threads</label>
+          <input type="checkbox" id="media" name="media" value="pinterest" />
+          <label for="media">Pinterest</label>
+          <input type="checkbox" id="media" name="media" value="tiktok" />
+          <label for="media">Tik Tok</label>
+          <p>
+            Any suggestions to make the internet a better, safe and more useful
+            place.
+          </p>
+          <textarea
+            id="txtarea"
+            name="txtarea"
+            rows="5"
+            cols="50"
+            placeholder="Your text here"
+          >
+Your Text here....
+      </textarea
+          >
+        </fieldset>
+        <button type="submit" id="submit">Submit Form</button>
+      </div>
+    </form>
+  </body>
+</html>
